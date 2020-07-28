@@ -27,6 +27,7 @@ public class MiniCode {
 
     /**
      * desc: 递归调用
+     * @param resultList 结果列表
      * @param combination 字母组合
      * @param index arr数组下标，每次循环加一
      * @param arr 数字数组
@@ -37,10 +38,13 @@ public class MiniCode {
         if (arr.length == index) {
             resultList.add(combination);
         } else {
+            // 根据具体数字获取映射的字母
             String letters = numberMapping.get(arr[index]);
+            // 为空则跳过
             if (null == letters) {
                 combiningLetter(resultList, combination, index + 1, arr);
             } else {
+                // 不为空则递归调用，组合字母
                 for(int i = 0; i < letters.length(); i++) {
                     String letter = numberMapping.get(arr[index]).substring(i, i + 1);
                     combiningLetter(resultList,combination + letter, index + 1, arr);

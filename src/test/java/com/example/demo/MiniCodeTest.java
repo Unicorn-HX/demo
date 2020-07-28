@@ -16,7 +16,7 @@ import java.util.List;
 @RunWith(JUnit4.class)
 public class MiniCodeTest {
 
-    private MiniCode miniCode = new MiniCode();
+    private final MiniCode miniCode = new MiniCode();
 
     /**
      * desc: 测试方法
@@ -28,44 +28,37 @@ public class MiniCodeTest {
         List<String> result1 = miniCode.getLetterCombinations(0, 1, 3, 4);
         System.out.println("0, 1, 3, 4 运行结果");
         result1.forEach(item -> System.out.print(item + " "));
-        System.out.println("");
-        System.out.println("");
+        System.out.println("\n");
 
         List<String> result2 = miniCode.getLetterCombinations(2, 3, 4);
         System.out.println("2, 3, 4 运行结果");
         result2.forEach(item -> System.out.print(item + " "));
-        System.out.println("");
-        System.out.println("");
+        System.out.println("\n");
 
         List<String> result3 = miniCode.getLetterCombinations(0);
         System.out.println("0 运行结果");
         result3.forEach(item -> System.out.print(item + " "));
-        System.out.println("");
-        System.out.println("");
+        System.out.println("\n");
 
         List<String> result4 = miniCode.getLetterCombinations(0, 9);
         System.out.println("0, 9 运行结果");
         result4.forEach(item -> System.out.print(item + " "));
-        System.out.println("");
-        System.out.println("");
+        System.out.println("\n");
 
         List<String> result5 = miniCode.getLetterCombinations(2);
         System.out.println("2 运行结果");
         result5.forEach(item -> System.out.print(item + " "));
-        System.out.println("");
-        System.out.println("");
+        System.out.println("\n");
 
         List<String> result6 = miniCode.getLetterCombinations(2, 3);
         System.out.println("2, 3 运行结果");
         result6.forEach(item -> System.out.print(item + " "));
-        System.out.println("");
-        System.out.println("");
+        System.out.println("\n");
 
         List<String> result7 = miniCode.getLetterCombinations(2, 3, 4, 5, 6, 7, 8, 9);
         System.out.println("2, 3, 4, 5, 6, 7, 8, 9 运行结果");
         result7.forEach(item -> System.out.print(item + " "));
-        System.out.println("");
-        System.out.println("");
+        System.out.println("\n");
     }
 
 }
