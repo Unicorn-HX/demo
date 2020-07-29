@@ -59,6 +59,22 @@ public class MiniCodeTest {
         System.out.println("2, 3, 4, 5, 6, 7, 8, 9 运行结果");
         result7.forEach(item -> System.out.print(item + " "));
         System.out.println("\n");
+
+        List<String> result8 = miniCode.getLetterCombinations(10, 99);
+        System.out.println("10, 99 运行结果");
+        result8.forEach(item -> System.out.print(item + " "));
+        System.out.println("\n");
+
+        List<String> result9 = miniCode.getLetterCombinations();
+        System.out.println("空数组 运行结果");
+        result9.forEach(item -> System.out.print(item + " "));
+        System.out.println("\n");
+
+        List<String> result10 = miniCode.getLetterCombinations(2, 2, 2);
+        System.out.println("2, 2, 2 运行结果");
+        result10.forEach(item -> System.out.print(item + " "));
+        System.out.println("\n");
+
     }
 
 }
